@@ -75,7 +75,7 @@ evalues = evalues[sort_indices]                               # putting evalues 
 evectors = evectors[:,sort_indices]                           # eigenvector is in column
 # evalues = evalues[:360] 
 # evectors = evectors[:360] 
-print(C[0])
+print(evectors[:,0])
 print(evectors.shape)
 # norms = np.linalg.norm(evectors, axis=0) 
 # evectors = evectors / norms 
