@@ -31,8 +31,9 @@ for person_id in range(1, person_num + 1):
 training_set = np.array(training_set)
 testing_set = np.array(testing_set)
 
-
-
+k_value = [1, 3, 5]
+n_value = [3, 50, 170]
+# Fold 1 n = 1
 KNN = KNeighborsClassifier(n_neighbors=2)
 KNN.fit(training_set, training_label)
 print(KNN.score(testing_set, testing_label))
